@@ -1,0 +1,7 @@
+project:
+  title: "Docs Site"
+  type: step-progress
+  
+format:
+  step-progress-html:
+    template: _extensions/step-progress/templates/html.template

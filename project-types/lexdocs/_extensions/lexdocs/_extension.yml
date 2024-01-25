@@ -1,0 +1,25 @@
+title: Lexdocs Project
+author: Lexcorp, Inc.
+version: 1.0.0
+quarto-version: ">=1.2.0"
+contributes:
+  project:
+    project:
+      type: website
+    website:
+      sidebar: 
+        contents: auto
+        search: true
+        style: docked
+        background: light
+        logo: lexcorp.png
+      page-footer: |
+        "Copyright 2022, Lexcorp, Inc." 
+    format: lexdocs-html
+  formats:
+    html:
+      theme: [default, theme.scss]
+      code-overflow: wrap
+      code-line-numbers: true
+      filters:
+        - filter.lua

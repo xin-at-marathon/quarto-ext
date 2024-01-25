@@ -1,0 +1,34 @@
+!!! 5
+%html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => "en"}
+  %head
+    %meta{'http-equiv' => 'Content-Type', :content => 'text/html', :charset => 'utf-8'}
+    %title Steps
+  %body
+    :coffeescript
+      steps = ['Start order', 'Prepare gift', 'Pack gift', 'Decorate box', 'Send gift']
+      numbers = [1,2,3,4]
+    .progress
+    .progress_inner
+      - for step, i in steps
+        .progress_inner__step
+          %label{:for => "step-#{i + 1}"} #{step}
+      %input{:type => 'radio', :name => 'step', :id => "step-1", :checked => 'checked'}
+      - for i in numbers
+        %input{:type => 'radio', :name => 'step', :id => "step-#{i + 1}"}
+      .progress_inner__bar
+      .progress_inner__bar--set
+      .progress_inner__tabs
+        - for step, i in steps
+          .tab{:class => "tab-#{i}"}
+            %h1 #{step}
+            %p No. #{i}: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tortor ipsum, eleifend vitae massa non, dignissim finibus eros. Maecenas non eros tristique nisl maximus sollicitudin.
+      .progress_inner__status
+        .box_base
+        .box_lid
+        .box_ribbon
+        .box_bow
+          .box_bow__left
+          .box_bow__right
+        .box_item
+        .box_tag
+        .box_string

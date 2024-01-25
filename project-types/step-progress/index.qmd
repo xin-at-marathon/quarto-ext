@@ -1,0 +1,10 @@
+---
+title: "Home"
+filters:
+   - include-code-files
+---
+
+## Home
+
+```{.python include="script.py" code-line-numbers="true"}
+```

@@ -1,0 +1,4 @@
+/.luarc.json
+_site/
+.quarto/
+node_modules/

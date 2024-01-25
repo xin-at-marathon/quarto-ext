@@ -1,0 +1,7 @@
+project:
+  title: "Docs Site"
+  type: lexdocs
+  
+format:
+  lexdocs-html:
+    toc: true
